@@ -10,7 +10,7 @@ A Team Effort for a big opportunity in Hack 36
 
 
 ## Contributors:
-Team Name: Blaze Tigerz
+#### Team Name: Blaze Tigerz
 
 [Arghya Kamal Guha](https://github.com/ArghyaKamalGuha-1)
 
