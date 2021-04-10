@@ -3,10 +3,14 @@
 A Team Effort for a big opportunity in Hack 36 
 
 # Table of Contents:
+1. Problem Statement: Unawareness in the time of Hiring 
+ 
+2.Solution: Using the App for job apply and also hiring interns
 
+3. Future development needed for better global reach
 
 ## Technology Stack:
-
+Flutter & Dart
 
 
 ## Contributors:
