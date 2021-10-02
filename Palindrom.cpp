@@ -1,28 +1,55 @@
 #include <iostream>
+#include <math.h>
+
 using namespace std;
+
+//Returns true if the given number is a Palindrome number
+bool isPalindrome(int n)
+{
+    int reverse = 0; //to store the reverse of the given number
+    int remainder = 0;
+
+    int n1 = n; //storing the original number for comparing later
+    //logic to compute the reverse of a number
+    while (n != 0)
+    {
+        remainder = n % 10;
+        reverse = reverse * 10 + remainder;
+        n /= 10;
+    }
+
+    if (reverse == n1)
+        return true;
+    else
+        return false;
+}
 
 int main()
 {
-     int n, num, digit, rev = 0;
+    cout << "\n\nWelcome to Studytonight :-)\n\n\n";
+    cout << " =====  Program to determine if the entered number is Palindrome or not ===== \n\n";
 
-     cout << "Enter a positive number: ";
-     cin >> num;
+    //variable declaration
+    int n;
+    bool palindrome = false;
 
-     n = num;
+    //taking input from the command line (user)
+    cout << " Enter a positive integer :  ";
+    cin >> n;
 
-     do
-     {
-         digit = num % 10;
-         rev = (rev * 10) + digit;
-         num = num / 10;
-     } while (num != 0);
+    //Calling a method that returns true if the number is Palindrome
+    palindrome = isPalindrome(n);
 
-     cout << " The reverse of the number is: " << rev << endl;
+    if (palindrome)
+    {
+        cout << "\n\nThe entered number " << n << " is a Palindrome number.";
+    }
+    else
+    {
+        cout << "\n\nThe entered number " << n << " is not a Palindrome number.";
+    }
 
-     if (n == rev)
-         cout << " The number is a palindrome.";
-     else
-         cout << " The number is not a palindrome.";
+    cout << "\n\n\n";
 
     return 0;
 }
